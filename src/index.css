@@ -37,6 +37,11 @@ code {
   font-weight: bold;
 }
 
+.navbar .title:hover {
+  color: rgb(219, 209, 209);
+  transform: scale(1.05);
+}
+
 .navbar .links a:hover {
   background-color: #777;
 }
@@ -44,3 +49,69 @@ code {
 .navbar .links a:active {
   background-color: #555;
 }
+
+.card {
+  min-height: 400px;
+  margin-top: 2rem;
+}
+
+.card .card-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card .card-header img {
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-body a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: white;
+  width: fit-content;
+  background-color: #333;
+  border-radius: 0.2rem;
+}
+
+.card .card-body a:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card .card-header img:hover {
+  transform: scale(1.1);
+  animation: rotation 10s infinite linear;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  padding-top: 3rem;
+}
+
+.container .row {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
