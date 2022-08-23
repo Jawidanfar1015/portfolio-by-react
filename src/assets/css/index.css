@@ -14,8 +14,14 @@ code {
     monospace;
 }
 
+main{
+  background-image: url(../images/background.jpeg);
+  background-size: contain;
+  background-repeat: repeat;
+  width: 100%;
+}
+
 .navbar {
-  background-color: #333;
   color: white;
   padding: 1rem;
 }
@@ -38,12 +44,12 @@ code {
 }
 
 .navbar .title:hover {
-  color: rgb(219, 209, 209);
+  color: rgb(80, 129, 109);
   transform: scale(1.05);
 }
 
 .navbar .links a:hover {
-  background-color: #777;
+  background-color: #335;
 }
 
 .navbar .links a:active {
@@ -97,6 +103,7 @@ code {
 
 .container h1 {
   padding-top: 3rem;
+  color: white;
 }
 
 .container .row {

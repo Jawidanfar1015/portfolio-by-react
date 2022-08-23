@@ -1,7 +1,7 @@
-import p1 from "./images/dnd.png"
-import p2 from "./images/getOutside.png"
-import p3 from "./images/first.png"
-import p4 from "./images/third.png"
+import p1 from "../assets/images/dnd.png"
+import p2 from "../assets/images/getOutside.png"
+import p3 from "../assets/images/first.png"
+import p4 from "../assets/images/third.png"
 
 const Projects = () => {
     return (  
@@ -18,9 +18,6 @@ const Projects = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sapiente
                         ut ipsa unde labore tempore consequatur aut ratione sequi praesentium quibusdam 
                         quidem illum ducimus quisquam reprehenderit deleniti, et eius quae.
-                    Repudiandae magni nostrum voluptates eum voluptatem provident saepe. Laudantium labore,
-                    molestias praesentium possimus vitae eaque sapiente, et nihil maiores nesciunt cumque 
-                    inventore id dolor eos reprehenderit, quidem porro consequatur. Beatae!
                     </p>
                     <a href="https://github.com/Jean424/DnD-Character-Creater">Check the code here</a>
                 </div>
@@ -34,9 +31,6 @@ const Projects = () => {
                     <h3>Info</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sapiente
                         ut ipsa unde labore tempore consequatur aut ratione sequi praesentium quibusdam 
-                        quidem illum ducimus quisquam reprehenderit deleniti, et eius quae.
-                    Repudiandae magni nostrum voluptates eum voluptatem provident saepe. Laudantium labore,
-                    molestias praesentium possimus vitae eaque sapiente, et nihil maiores nesciunt cumque 
                     inventore id dolor eos</p>
                     <a href="https://github.com/pdubya1632/Get-Outside">Check the code here</a>
                 </div>
