@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Quicksand', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,6 +10,37 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Quicksand',
     monospace;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+.navbar .links a {
+  text-decoration: none;
+  padding: 0.3rem; 
+  color: inherit;
+  cursor: pointer;
+}
+
+.navbar .title{
+  text-decoration: none;
+  color: #888;
+  font-size: 1.5rem;
+}
+
+.navbar a span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar .links a:hover {
+  background-color: #777;
+}
+
+.navbar .links a:active {
+  background-color: #555;
 }
