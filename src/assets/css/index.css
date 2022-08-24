@@ -16,9 +16,11 @@ code {
 
 main{
   background-image: url(../images/background.jpeg);
-  background-size: contain;
   background-repeat: repeat;
+  background-size: cover;
   width: 100%;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .navbar {
@@ -34,7 +36,7 @@ main{
 
 .navbar .title{
   text-decoration: none;
-  color: #888;
+  color: #FFFACD;
   font-size: 1.5rem;
 }
 
@@ -43,13 +45,20 @@ main{
   font-weight: bold;
 }
 
+h6 {
+  line-height: 1.7;
+}
+
 .navbar .title:hover {
-  color: rgb(80, 129, 109);
+  font-weight: bolder;
+  color: #FF7F50;
   transform: scale(1.05);
 }
 
 .navbar .links a:hover {
-  background-color: #335;
+  border-radius: 0.2rem;
+  background-color: #a7d8de;
+  font-weight: bolder;
 }
 
 .navbar .links a:active {
@@ -101,8 +110,37 @@ main{
   text-align: center;
 }
 
+.container .box {
+  width: 100%;
+  align-items: center;
+}
+
+.container .box h2 {
+  color: white;
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container .box div {
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.container.home{
+  margin-top: 5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .container h1 {
-  padding-top: 3rem;
   color: white;
 }
 
@@ -111,6 +149,15 @@ main{
   justify-content: space-around;
   margin: 2rem 0;
   padding: 1rem 0;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-color:rgba(0, 0, 0, 0.5)
 }
 
 @keyframes rotation {
