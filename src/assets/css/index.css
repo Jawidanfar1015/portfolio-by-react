@@ -80,9 +80,7 @@ h6 {
 }
 
 .navbar .links a.active {
-  background-color: #555;
-  padding: 0.3rem 0.5rem;
-  border-radius: 0.2rem;
+  border-bottom: 3px solid #FF7F50;
 }
 
 .navbar .links a:hover, .download-resume:hover {
