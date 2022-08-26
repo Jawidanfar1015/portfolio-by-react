@@ -7,7 +7,7 @@ const Navbar = () => {
                <Link className="title" to="/">Hi! I'm Jawid N<span className="double-o">⎌</span>ri</Link>
             </div>
             <div className="links">
-                <CustomLink to="/portfolio-by-react">Home</CustomLink>
+                <CustomLink to="/">Home</CustomLink>
                 <CustomLink to="/profile">Profile</CustomLink>
                 <CustomLink to="/projects">Projects</CustomLink>
                 <CustomLink to="/contact">Contanct</CustomLink>
