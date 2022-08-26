@@ -18,6 +18,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/portfolio-by-react" element={<Home />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </div>
