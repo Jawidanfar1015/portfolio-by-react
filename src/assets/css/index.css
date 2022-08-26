@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --romance: #FFFACD;
+  --white: white;
+  --crystal: #a7d8de;
+}
+
+body {
+  margin: 0;
+  background-image: url(../images/background.jpeg);
+  background-repeat: repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Quicksand', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Quicksand',
     monospace;
@@ -9,19 +32,6 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  position: relative;
-  background-image: url(../images/background.jpeg);
-  background-repeat: repeat;
-  background-size: cover;
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Quicksand', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .navbar {
@@ -32,29 +42,31 @@ main{
   position: absolute;
   top: 0;
   left: 0;
-  color: white;
+  color: var(--white);
   padding: 1rem;
 }
 .navbar .links a {
   text-decoration: none;
-  padding: 0.3rem; 
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  margin: 0.3rem; 
   color: inherit;
   cursor: pointer;
 }
 
 .navbar .title{
   text-decoration: none;
-  color: #FFFACD;
-  font-size: 1.5rem;
+  color: var(--romance);
+  font-size: 2rem;
 }
 
 .navbar a span {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 h1, h2, h3 {
-  color: #FFFACD;
+  color: var(--romance);
 }
 
 h6 {
@@ -67,20 +79,29 @@ h6 {
   transform: scale(1.05);
 }
 
+.navbar .links a.active {
+  background-color: #555;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
 .navbar .links a:hover, .download-resume:hover {
   border-radius: 0.2rem;
-  background-color: #a7d8de;
-  color: #FFFACD;
+  background-color: var(--crystal);
+  color: var(--romance);
   font-weight: bolder;
 }
 
-.navbar .links a:active {
-  background-color: #555;
-}
-
 .card {
+  background-color: rgba(118, 144, 145, 0.7);
   min-height: 400px;
   margin-top: 2rem;
+}
+
+p {
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .card .card-header {
@@ -103,7 +124,7 @@ h6 {
 .card .card-body a {
   text-decoration: none;
   padding: 0.5rem;
-  color: white;
+  color: var(--white);
   width: fit-content;
   background-color: #333;
   border-radius: 0.2rem;
@@ -119,6 +140,16 @@ h6 {
   animation: rotation 10s infinite linear;
 }
 
+.form-container {
+  border-radius: 0.5rem;
+  background-color: rgba(118, 144, 145, 0.7);
+  padding: 1rem;
+}
+
+input[type='text'],[type="email"], textarea {
+  background-color: rgb(255, 255, 255, 0.7) !important;
+}
+
 .container {
   text-align: center;
 }
@@ -129,7 +160,7 @@ h6 {
 }
 
 .container .box h2 {
-  color: white;
+  color: var(--white);
   padding: 0.5rem;
 }
 
@@ -142,11 +173,11 @@ a {
 }
 
 .container .box a h2:hover {
-  color: #a7d8de;
+  color: var(--crystal);
 }
 
 .container h1 {
-  color: white;
+  color: var(--white);
 }
 
 .container .row {
@@ -162,27 +193,54 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
-  background-color:rgba(0, 0, 0, 0.5)
+  background-color:rgba(0, 0, 0, 0.3)
 }
 
 .download-resume {
-  font-size: 18px;
+  font-size: 1.4em;
   text-decoration: none;
-  color: white;
-  padding: 1rem;
-  margin: 1rem;
+  color: var(--white);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .resume-image {
   border-radius: 0.5rem;
 }
 
+a.email-link {
+  color: var(--romance);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+a.email-link:hover {
+  transform: scale(1.05);
+  color: var(--romance);
+}
 
 .project-container, .container.about {
   position: absolute;
   top: 100px;
 }
 
+.footer {
+  bottom: 0;
+  left: 0;
+}
+
+footer ul li{
+  color: var(--white);
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 2.5em;
+  display: inline;
+}
+
+footer ul li:hover{ 
+  color: var(--romance);
+  font-weight: bolder;
+}
 
 @keyframes rotation {
   from {
@@ -193,3 +251,9 @@ a {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .container .contact-form {
+    padding-top: 5rem;
+  }
+}
+  
