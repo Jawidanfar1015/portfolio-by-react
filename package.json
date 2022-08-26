@@ -1,7 +1,7 @@
 {
   "name": "portfolio-by-react",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://jawidanfar1015.github.io/portfolio-by-react",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
