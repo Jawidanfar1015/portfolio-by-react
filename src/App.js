@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <div className="container">
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="portfolio-by-react/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
