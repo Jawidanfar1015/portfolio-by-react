@@ -25,7 +25,7 @@
 
 - There is no Contribution for using this App.
 
-# have Questions?
+# have a Question?
 
 - 📧: Hajikak4030@gmail.com
 - ☎️ : (206) 588-6031
