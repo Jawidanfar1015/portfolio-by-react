@@ -14,11 +14,10 @@ function App() {
         <Navbar />
         <div className="container">
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route path="/portfolio-by-react" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/portfolio-by-react" element={<Home />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </div>

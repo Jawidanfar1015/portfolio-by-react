@@ -4,10 +4,10 @@ const Navbar = () => {
     return (  
         <nav className="navbar d-flex justify-content-between">
             <div>
-               <Link className="title" to="/">Hi! I'm Jawid N<span className="double-o">⎌</span>ri</Link>
+               <Link className="title" to="/portfolio-by-react">Hi! I'm Jawid N<span className="double-o">⎌</span>ri</Link>
             </div>
             <div className="links">
-                <CustomLink to="/">Home</CustomLink>
+                <CustomLink to="/portfolio-by-react">Home</CustomLink>
                 <CustomLink to="/profile">Profile</CustomLink>
                 <CustomLink to="/projects">Projects</CustomLink>
                 <CustomLink to="/contact">Contanct</CustomLink>

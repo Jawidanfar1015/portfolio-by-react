@@ -16,7 +16,7 @@ const Profile = () => {
                         I believe in my abilities that can bring changes in the work feild.
                     </h6>
                 </div>
-                <div className="col-sm-11 col-md-3 position-relative">
+                <div className="col-sm-11 col-md-4 position-relative">
                     <img src={profilePhoto} alt="It's Me" style={{width: "100%", height: "100%", borderRadius: "0.5rem", margin: 0}}/>
                     <div className='overlay position-absolute'></div>
                 </div>
